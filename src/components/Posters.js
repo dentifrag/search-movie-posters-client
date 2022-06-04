@@ -12,7 +12,7 @@ const Posters = () => {
         const getPosters = async () => {
             const options = {
                 method: 'GET',
-                url: `https://search-movie-posters.herokuapp.com//poster?movieid=${movieid}`,
+                url: `https://search-movie-posters.herokuapp.com/poster?movieid=${movieid}`,
 
             }
             axios.request(options).then((response) => {
