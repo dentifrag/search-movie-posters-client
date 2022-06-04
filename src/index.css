@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200&family=Ubuntu:wght@300&display=swap);
+
+body {
+  background: rgb(181, 181, 181);
+  background: linear-gradient(0deg, rgba(181, 181, 181, 1) 0%, rgba(102, 100, 97, 1) 100%);
+  background-attachment: fixed;
+  font-family: 'Smooch Sans', sans-serif;
+}
+
+/* Classes */
+
+.container {
+  width: 50%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  margin: auto;
+
+}
+
+.box {
+  width: 20%;
+  height: auto;
+  margin: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid-image:hover {
+  filter: brightness(40%);
+  transition: filter 0.3s ease;
+}
+
+.grid-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.movie-poster-link {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1c5099;
+
+}
+
+/* IDs */
+#main-poster {
+  padding: 30px;
+  max-width: 70%;
+  height: auto;
+}
+
+#footer {
+  font-size: 23px;
+  position: fixed;
+  left: 90%;
+  bottom: 10px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  text-align: center;
+}
+
+#slogan {
+  font-size: 30px;
+  color: black;
+  margin-top: 0px;
+}
+
+#home-link {
+  color: #1c5099;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 60px;
+}
+
+#search-box {
+  text-align: center;
+  font-size: 25px;
+  width: 500px;
+  height: 25px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  padding: 1px;
+
+}
+
+#search-btn {
+  color: white;
+  background-color: #1c5099;
+  margin-left: 2px;
+  height: 28px;
+  border: none;
+  border-radius: 5px;
+
+}
+
+#search-btn:hover {
+  background-color: #112f59;
+  transition: 0.3s;
+}
+
+#search-btn:active {
+  background-color: #276dcf;
+}
