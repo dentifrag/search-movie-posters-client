@@ -13,7 +13,7 @@ const SearchBar = () => {
   const getMovies = async (movie) => {
     const options = {
       method: 'GET',
-      url: `http://localhost:5000/search`,
+      url: `https://search-movie-posters.herokuapp.com//search`,
       params: { movie: movie }
     }
     axios.request(options).then((response) => {
