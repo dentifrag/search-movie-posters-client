@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import {useSearchParams} from 'react-router-dom';
@@ -15,7 +14,7 @@ const SearchBar = () => {
       url: `https://search-movie-posters.herokuapp.com/search`,
       params: { movie: movie }
     }
-    axios.request(options).then((response) => {
+    await axios.request(options).then((response) => {
       console.log(response.data);
       setMovies(response.data);
 
