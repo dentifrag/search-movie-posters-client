@@ -10,10 +10,11 @@ const Header = () => {
                 <p className="headers" id="slogan">A simple way to get your high quality movie posters</p>
 
                 <form id='form' method={'GET'} action={'/search'}>
-                    <input id="search-box" type="text" placeholder='Search for any movie' name="movie" value={title} onChange={(e) => setTitle(e.target.value)} />
+                    <input id="search-box" type="text" placeholder='Search for any movie' name="movie" value={title}
+                           onChange={(e) => setTitle(e.target.value)}/>
                     <button id='search-btn'>Search</button>
                 </form>
-        </div>
+            </div>
         </div>
     )
 }
