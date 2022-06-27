@@ -33,7 +33,7 @@ const SearchBar = () => {
       <div>
         {movies &&
           <div className='container'>
-            {movies.map((movie, i) => (
+            {movies.map((movie, i) => movie.poster_path && (
               <div key={i} className='box'>
                 <a href={`posters/${movie.id}`}><img className='grid-image' alt={movie.title} src={posterURL + movie.poster_path} /></a>
                 <a href={`posters/${movie.id}`} className='movie-poster-link'>{`${movie.title} (${movie.release_date})`}</a>
